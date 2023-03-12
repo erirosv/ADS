@@ -1,0 +1,46 @@
+Varmfrontsgatan, 1
+Temperaturgatan, 2
+Väderilsgatan, 1
+Friskväderstorget, 1
+Önskevädersgatan, 1
+Mildvädersgatan, 1
+Vårväderstorget, 1
+Sälöfjordsgatan, 2
+Eketrägatan, 1
+Gropegårdsgatan, 1
+Rambergsvallen, 1
+Wieselgrensplatsen, 2
+Vågmästareplatsen, 1
+Hjalmar Brantingsplatsen, 1
+Frihamnen, 4
+Nordstan, 2
+Brunnsparken, 2
+Domkyrkan, 1
+Grönsakstorget, 2
+Hagakyrkan, 3
+Järntorget, 1
+Prinsgatan, 2
+Olivedalsgatan, 1
+Linnéplatsen, 3
+Sahlgrenska Huvudentré, 1
+Medicinaregatan, 1
+Wavrinskys Plats, 1
+Chalmers, 4
+Korsvägen, 1
+Scandinavium, 2
+Ullevi Södra, 2
+Ullevi Norra, 2
+Svingeln, 2
+Olskrokstorget, 1
+Redbergsplatsen, 2
+Ejdergatan, 2
+Gamlestads Torg, 1
+SKF, 2
+Bellevue, 2
+Kviberg, 1
+Beväringsgatan, 1
+Nymånegatan, 1
+Runstavsgatan, 2
+Kortedala Torg, 1
+Allhelgonakyrkan, 1
+Aprilgatan, 0

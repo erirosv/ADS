@@ -1,0 +1,38 @@
+Saltholmen, 1
+Roddföreningen, 1
+Långedrag, 1
+Hinsholmen, 2
+Käringberget, 1
+Tranered, 1
+Hagen, 2
+Nya Varvsallén, 1
+Kungssten, 2
+Sandarna, 1
+Sannaplan, 1
+Mariaplan, 1
+Godhemsgatan, 1
+Ekedal, 2
+Majvallen, 1
+Fjällgatan, 2
+Stigbergstorget, 2
+Masthuggstorget, 2
+Järntorget, 3
+Hagakyrkan, 2
+Grönsakstorget, 1
+Domkyrkan, 2
+Brunnsparken, 2
+Centralstationen, 6
+Gamlestads Torg, 1
+SKF, 2
+Bellevue, 1
+Kviberg, 1
+Beväringsgatan, 1
+Nymånegatan, 1
+Runstavsgatan, 2
+Kortedala Torg, 1
+Allhelgonakyrkan, 1
+Januarigatan, 2
+Galileis gata, 1
+Teleskopgatan, 2
+Rymdtorget Spårvagn, 1
+Komettorget, 0

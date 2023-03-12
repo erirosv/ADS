@@ -1,0 +1,30 @@
+Marklandsgatan, 1
+Bokekullsgatan, 1
+Högsbogatan, 1
+Klintens Väg, 1
+Godhemsgatan, 2 
+Mariaplan, 1
+Ostindiegatan, 1
+Vagnhallen Majorna, 1
+Jaegerdorffsplatsen, 1
+Chapmans Torg, 2
+Kaptensgatan, 2
+Stigbergstorget, 2
+Masthuggstorget, 2
+Järntorget, 3
+Hagakyrkan, 2
+Vasa Viktoriagatan, 3
+Vasaplatsen, 1
+Valand, 2
+Kungsportsplatsen, 2
+Brunnsparken, 2
+Centralstationen, 3
+Ullevi Norra, 2
+Svingeln, 2
+Olskrokstorget, 1
+Redbergsplatsen, 1
+Stockholmsgatan, 1
+Härlanda, 2
+Solrosgatan, 1
+Sanatoriegatan, 1
+Virginsgatan, 0

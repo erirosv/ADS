@@ -1,0 +1,12 @@
+Wieselgrensplatsen, 1
+Vågmästareplatsen, 1
+Hjalmar Brantingsplatsen, 1
+Frihamnen, 4
+Nordstan, 1
+Centralstationen, 6
+Gamlestads Torg, 1
+SKF, 2
+Bellevue, 1
+Kviberg, 1
+Beväringsgatan, 1
+Nymånegatan, 0

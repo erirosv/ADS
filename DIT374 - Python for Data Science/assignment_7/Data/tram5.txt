@@ -1,0 +1,36 @@
+Östra sjukhuset, 1
+Tingvallsvägen, 1
+Kaggeledstorget, 1
+Ättehögsgatan, 1
+Munkebäckstorget, 1
+Solrosgatan, 1
+Sanatoriegatan, 1
+Virginsgatan, 2
+Welandergatan, 1
+Töpelsgatan, 1
+Bögatan, 1
+Ekmanska, 1
+Bäckeliden, 1
+Sankt Sigfrids Plan, 1
+Liseberg Station, 2
+Korsvägen, 1
+Berzeliigatan, 2
+Valand, 2
+Kungsportsplatsen, 2
+Brunnsparken, 1
+Lilla Bommen, 3
+Frihamnen, 1
+Hjalmar Brantingsplatsen, 1
+Vågmästareplatsen, 1
+Wieselgrensplatsen, 1
+Rambergsvallen, 2
+Gropegårdsgatan, 1
+Eketrägatan, 2
+Sälöfjordsgatan, 1
+Vårväderstorget, 1
+Mildvädersgatan, 1
+Önskevädersgatan, 1
+Friskväderstorget, 1
+Väderilsgatan, 2
+Temperaturgatan, 1
+Varmfrontsgatan, 0

@@ -1,0 +1,21 @@
+Mölndals Innerstad, 1
+Mölndals sjukhus, 2
+Lackarebäck, 1
+Krokslätts fabriker, 1
+Krokslätts torg, 1
+Lana, 1
+Varbergsgatan, 1
+Elisedal, 1
+Almedal, 2
+Liseberg Södra, 2
+Korsvägen, 1
+Berzeliigatan, 2
+Valand, 2
+Kungsportsplatsen, 2
+Brunnsparken, 2
+Centralstationen, 6
+Gamlestads Torg, 6
+Hjällbo, 3
+Hammarkullen, 1
+Storås, 3
+Angered centrum, 0

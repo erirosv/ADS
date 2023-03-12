@@ -1,0 +1,23 @@
+Väderilsgatan, 1
+Friskväderstorget, 1
+Önskevädersgatan, 1
+Mildvädersgatan, 1
+Vårväderstorget, 2
+Sälöfjordsgatan, 1
+Eketrägatan, 1
+Gropegårdsgatan, 1
+Rambergsvallen, 1
+Wieselgrensplatsen, 2
+Vågmästareplatsen, 1
+Hjalmar Brantingsplatsen, 1
+Frihamnen, 4
+Lilla Bommen, 1
+Brunnsparken, 2
+Kungsportsplatsen, 2
+Valand, 1
+Vasaplatsen, 2
+Kapellplatsen, 1
+Chalmers, 1
+Wavrinskys plats, 1
+Doktor Fries torg, 2
+Doktor Sydows gata, 0

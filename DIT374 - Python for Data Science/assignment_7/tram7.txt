@@ -1,0 +1,35 @@
+Opaltorget, 1
+Smaragdgatan, 1
+Briljantgatan, 1
+Frölunda Torg Spårvagn, 1
+Positivgatan, 1
+Musikvägen, 1
+Nymilsgatan, 1
+Lantmilsgatan, 2
+Axel Dahlströms torg, 1
+Marklandsgatan, 3
+Botaniska trädgården, 3
+Sahlgrenska huvudentré, 1
+Medicinaregatan, 1
+Wavrinskys plats, 1
+Chalmers, 1
+Kapellplatsen, 3
+Vasaplatsen, 1
+Valand, 2
+Kungsportsplatsen, 2
+Brunnsparken, 2
+Centralstationen, 6
+Gamlestads Torg, 1
+SKF, 2
+Bellevue, 1
+Kviberg, 1
+Beväringsgatan, 1
+Nymånegatan, 1
+Runstavsgatan, 2
+Kortedala Torg, 1
+Allhelgonakyrkan, 1
+Januarigatan, 2
+Galileis gata, 1
+Teleskopgatan, 2
+Rymdtorget, 1
+Komettorget, 0

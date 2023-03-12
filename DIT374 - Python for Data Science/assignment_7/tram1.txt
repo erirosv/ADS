@@ -1,0 +1,28 @@
+Opaltorget, 1
+Smaragdgatan, 1
+Briljantgatan, 1
+Frölunda Torg Spårvagn, 1
+Positivgatan, 1
+Musikvägen, 1
+Nymilsgatan, 1
+Lantmilsgatan, 2
+Axel Dahlströms Torg, 1
+Marklandsgatan, 3
+Botaniska Trädgården, 2
+Linnéplatsen, 1
+Olivedalsgatan, 2
+Prinsgatan, 2
+Järntorget, 2
+Stenpiren, 3
+Brunnsparken, 2
+Centralstationen, 3
+Ullevi Norra, 2
+Svingeln, 2
+Olskrokstorget, 3
+Redbergsplatsen, 2
+Stockholmsgatan, 1
+Härlanda, 2
+Munkebäckstorget, 1
+Ättehögsgatan, 1
+Kaggeledstorget, 2
+Tingvallsvägen, 0
