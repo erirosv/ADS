@@ -1,0 +1,297 @@
+@prefix : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2> .
+
+<http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isAssigned
+:isAssigned rdf:type owl:ObjectProperty ;
+            rdfs:domain :TeachingStaff ;
+            rdfs:range :TimeAssignment .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isBelongingTo
+:isBelongingTo rdf:type owl:ObjectProperty ;
+               rdfs:domain :ProgrammeCourses ;
+               rdfs:range :Courses .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isConductedAs
+:isConductedAs rdf:type owl:ObjectProperty ;
+               rdfs:domain :Courses ;
+               rdfs:range :CourseInstances .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isDirectorOf
+:isDirectorOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :SeniorTeacher ;
+              rdfs:range :Programme .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isEnrolledIn
+:isEnrolledIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Students ;
+              rdfs:range :ProgrammeCourses .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isExamining
+:isExamining rdf:type owl:ObjectProperty ;
+             rdfs:domain :SeniorTeacher ;
+             rdfs:range :CourseInstances .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isNeededFor
+:isNeededFor rdf:type owl:ObjectProperty ;
+             rdfs:domain :TimeAssignment ;
+             rdfs:range :CourseInstances .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isOffering
+:isOffering rdf:type owl:ObjectProperty ;
+            rdfs:domain :Department ;
+            rdfs:range :Programme .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isOwnedBy
+:isOwnedBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :Courses ;
+           rdfs:range :Programme .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isProviding
+:isProviding rdf:type owl:ObjectProperty ;
+             rdfs:domain :Programme ;
+             rdfs:range :ProgrammeCourses .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isRegisteredFor
+:isRegisteredFor rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Registration ;
+                 rdfs:range :CourseInstances .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isRegisteredUnder
+:isRegisteredUnder rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Students ;
+                   rdfs:range :Registration .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#isWorkingFor
+:isWorkingFor rdf:type owl:ObjectProperty ;
+              rdfs:domain :TeachingStaff ;
+              rdfs:range :Department .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasAcademicYear
+:hasAcademicYear rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :CourseInstances ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasAssignedHours
+:hasAssignedHours rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TimeAssignment ;
+                  rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasCourseCode
+:hasCourseCode rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Courses ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasCourseName
+:hasCourseName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Courses ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasCourseType
+:hasCourseType rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ProgrammeCourses ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasCredits
+:hasCredits rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Courses ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasDeptId
+:hasDeptId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Department ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasDeptName
+:hasDeptName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Department ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasDivision
+:hasDivision rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Department ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasGrade
+:hasGrade rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Registration ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasGraduated
+:hasGraduated rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Students ;
+              rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasId
+:hasId rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Individual ;
+       rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasLevel
+:hasLevel rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Courses ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Individual ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasPlanningNumStudents
+:hasPlanningNumStudents rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :CourseInstances ;
+                        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasProgrammeCode
+:hasProgrammeCode rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Programme ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasProgrammeName
+:hasProgrammeName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Programme ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasRegistrationYear
+:hasRegistrationYear rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Students ;
+                     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasReportedHours
+:hasReportedHours rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TimeAssignment ;
+                  rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasStatus
+:hasStatus rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Registration ;
+           rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasStudyPeriod
+:hasStudyPeriod rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CourseInstances ;
+                rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#hasStudyYear
+:hasStudyYear rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ProgrammeCourses ;
+              rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#needsAssistantHours
+:needsAssistantHours rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :CourseInstances ;
+                     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#needsSeniorHours
+:needsSeniorHours rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :CourseInstances ;
+                  rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#CourseInstances
+:CourseInstances rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#Courses
+:Courses rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#Department
+:Department rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#Individual
+:Individual rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#Programme
+:Programme rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#ProgrammeCourses
+:ProgrammeCourses rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#Registration
+:Registration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#SeniorTeacher
+:SeniorTeacher rdf:type owl:Class ;
+               rdfs:subClassOf :TeachingStaff .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#Students
+:Students rdf:type owl:Class ;
+          rdfs:subClassOf :Individual .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#TeachingAssistant
+:TeachingAssistant rdf:type owl:Class ;
+                   rdfs:subClassOf :TeachingStaff .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#TeachingStaff
+:TeachingStaff rdf:type owl:Class ;
+               rdfs:subClassOf :Individual .
+
+
+###  http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#TimeAssignment
+:TimeAssignment rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

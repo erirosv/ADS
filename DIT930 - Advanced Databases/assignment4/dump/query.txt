@@ -1,0 +1,38 @@
+select * where {
+    ?ss rdf:type :Students ;
+              :hasName ?pls_work ;
+           rdf:type :TeachingAssistant .
+
+	?cc rdf:type :Courses ;
+            :isUnder :D3-2 .
+
+	?cc1 :hasStudyPeriod "2.0" ;
+            :hasAcademicYear "2023-2024" .
+}
+
+
+select * where {
+    ?t rdf:type :TeachingStaff ;
+     	:hasName ?teacherName ;
+     	:isAssigned ?tta .
+
+	?tt :isNeededFor ?courseInstance ;
+        :hasAssignedHours ?h .
+
+ 	?ci :hasStudyPeriod "1.0" ;
+        :hasAcademicYear "2018-2019" .
+}
+
+
+select * where {
+    ?s rdf:type :Students ;
+     :isRegisteredUnder ?w ;
+     :isRegisteredUnder ?e .
+    
+    ?w :isRegisteredFor :I-910 .
+    
+    ?s :isRegisteredFor ?a ;
+     FILTER (?a != :I-911) .
+}
+Order by ?studentId
+

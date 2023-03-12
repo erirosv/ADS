@@ -1,0 +1,106 @@
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+#  Q1 - Find the name, director and department of all programmes.
+
+select * where {
+    ?progName rdf:type :Programme ;
+              :hasDirector ?director .
+    ?dept :isOffering ?progName .
+}
+
+
+
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# Q2 - Find the names of all students who worked as teaching assistants in courses given by the D3-2 division in study period 2 in academic year 2023/2024.
+
+select distinct * where {
+    # Get all Students and their TimeAssignment(s)
+    ?studentId rdf:type :Students ;
+              :hasName ?studentName ;
+              :isAssigned ?timeAssignment ;
+           rdf:type :TeachingAssistant .
+    
+    # Get all Courses given by D3-2, 
+    # and the CourseInstances conducted under these courses
+    ?course rdf:type :Courses ;
+            :isUnder :D3-2 ;
+            :isConductedAs ?courseInstance .
+    
+    # Assuming worked as TA = has reported hours > 0 to the courses
+    ?timeAssignment :hasReportedHours ?reportedHours ;
+            :isNeededFor ?courseInstance ;
+      FILTER (?reportedHours > 0) .
+    
+    # Get all CourseInstances in study period 2
+    # and in academic year 2023-2024
+    ?courseInstance :hasStudyPeriod "2.0" ;
+            :hasAcademicYear "2023-2024" .
+                     
+}
+
+
+
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# Q3 - Find all teachers who are assigned more than 120 hours in course 1011 in study period 1 in academic year 2018/2019.
+
+select * where {
+    # Get all teachers and their TimeAssignments
+    ?teacherId rdf:type :TeachingStaff ;
+     :hasName ?teacherName ;
+      :isAssigned ?timeAssignment .
+    
+    # Get all TimeAssignments for all CourseInstances 
+    # with > 120 assigned hours
+    ?timeAssignment :isNeededFor ?courseInstance ;
+        :hasAssignedHours ?hours ;
+        FILTER (?hours > 120) .
+    
+    # Filter for CourseInstances conducted as Course 1011
+    :1011 :isConductedAs ?courseInstance .
+    
+    # Filter for CourseInstances in study period 1, academic year 2018-2019
+    ?courseInstance :hasStudyPeriod "1.0" ;
+        :hasAcademicYear "2018-2019" .
+}
+
+
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# Q4 - Find all students registered for course instance I-910 that were not registered for course instance I-911.
+
+select distinct ?studentId where {
+    ?studentId rdf:type :Students ;
+     :isRegisteredUnder ?reg910 ;
+     :isRegisteredUnder ?allOtherReg .
+    
+    # Student is registered for CourseInstance I-910
+    ?reg910 :isRegisteredFor :I-910 .
+    
+    # Student is not registered for CourseInstance I-911
+    ?allOtherReg :isRegisteredFor ?allOtherCourseInstances ;
+     FILTER (?allOtherCourseInstances != :I-911) .
+}
+
+
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# Q5 - Find all programmes along with the total number of owned courses. List the results in descending order of number of owned courses.
+
+select ?progCode ?progName (COUNT(?course) as ?numOwnedCourses) where {
+    # Get all Programmes
+    ?progCode rdf:type :Programme ;
+              :hasProgrammeName ?progName .
+    
+    # Get all Courses owned by respective Programmes
+    ?course rdf:type :Courses ;
+     :isOwnedBy ?progName .
+}
+GROUP BY ?progName ?progCode 
+ORDER BY DESC (?numOwnedCourses) # Order by number of owned courses

@@ -1,0 +1,110 @@
+Query A: ????
+--------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+
+#Find the name, department and division of all teaching assistants. 
+select ?name ?departmentName ?division where { 
+ ?taId rdf:type :TeachingAssistant .
+    ?taId :hasName ?name .
+    ?taId :isWorkingFor ?department .
+    ?department :hasDeptName ?departmentName .
+    ?department :hasDivision ?division .
+}
+-----------------------------------------
+
+Query B:
+--------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+
+#Find all students who are registered in course 1516 and course 1518 in study period 4 in academic year 2017/2018
+
+select ?studentName ?studentId ?programme ?year ?graduated where {
+    # students registered for above filtered courses
+    ?studentId rdf:type :Students ;
+       :hasName ?studentName ;
+             :isRegisteredUnder ?courseInstance ;
+       :isEnrolledIn ?programme ;
+          :hasRegistrationYear ?year ;
+          :hasGraduated ?graduated .
+    # course conducted in study period 4, in academic year 2017/2018
+    {?courseInstance rdf:type :CourseInstances ;
+     :hasStudyPeriod '4.0' ;
+        :hasAcademicYear '2017-2018' .
+    ?courseInstance :isConductedAs ?course .}
+    ?course rdf:type :Courses
+    # courses 1516/1518
+    {?course :hasCourseCode "1516" .}
+    UNION
+    {?course :hasCourseCode "1518" .}
+}
+--------------------------------------
+
+Query C:
+--------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+
+#Find all course instances of courses owned by the programmes P-52 or P-71 where the total assigned hours is larger than the total number of reported hours.
+
+select ?courseInstance ?courseCode ?studyPeriod (SUM(?assignedHours) as ?tah) (SUM(?reportedHours) as ?trh) where {
+    {?course :isOwnedBy :P-52 .}
+    UNION
+    {?course :isOwnedBy :P-71 .}
+    
+    ?course :isConductedAs ?courseInstance ;
+     :hasCourseCode ?courseCode .
+    ?courseInstance :hasStudyPeriod ?studyPeriod .
+
+    ?timeAssignment :isNeededFor ?courseInstance ;
+  :hasAssignedHours ?assignedHours ;
+  :hasReportedHours ?reportedHours .  
+} 
+GROUP BY ?courseInstance ?courseCode ?studyPeriod
+HAVING (?tah > ?trh)
+-------------------------------------------------
+
+Query D:
+--------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+
+#Find all programmes that do not have a compulsory course in study period 3 of academic year 2013/2014. 
+
+# ?progCode2 ?progName2 ?deptName ?director ?courseType
+
+select distinct * where {
+    ?progCode rdf:type :Programme ;
+        :hasProgrammeName ?progName ;
+        :hasDirector ?director .
+    MINUS {
+     # ProgrammeCourses that are COMPULSORY
+        ?progCode :hasCourseType "compulsory";
+            :hasProgrammeName ?progName ;
+      :isBelongingTo ?courseCode .
+    
+     # CourseInstances conducted in study period 3, in 2013-2014
+     ?courseCode :isConductedAs ?courseInstance .
+     ?courseInstance :hasStudyPeriod "3.0" ;
+                 :hasAcademicYear "2013-2014" .
+    }
+    ?deptName :isOffering ?progCode .
+}
+-----------------------------------------------
+
+Query E:
+---------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/huiqing/ontologies/2022/3/untitled-ontology-2#>
+
+#Find the programme that owns the most courses.
+
+select ?progName (COUNT(?courses) as ?ownedCourses) where { 
+    ?progCode rdf:type :Programme ;
+     :hasProgrammeName ?progName .
+    ?courses :isOwnedBy ?progName .
+} 
+GROUP BY ?progName
+ORDER BY DESC(?ownedCourses) 
+LIMIT 1
