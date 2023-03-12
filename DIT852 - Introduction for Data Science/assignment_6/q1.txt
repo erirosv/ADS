@@ -1,0 +1,19 @@
+7:
+In the Fragile Families Challenge researchers from 160 teams were tasked to predict a number of social outcomes -  child grade point average, child grit, household eviction, household material hardship, primary caregiver layoff, and primary caregiver participation in job training - using extensive longitudinal data. Is this a difficult prediction task? Why? Why not?
+
+Yes, because social outcomes depends on many parameters. Many of which may not be captured well by the dataset
+
+8:
+The authors of the Fragile Families Challenge study argue that 'predictibility' is poor measure for understanding the mechanisms of social outcomes. What alternatives do the authors propose?
+
+The current understanding is correct but incomplete because it lacks theories that explain why outcomes are dicult to predict even with high-quality data.
+
+9:
+What important ethical implications may a poor 'predictibility' of social outcomes have?
+
+Using predictive modeling in the child-protective services may lead to wrongful removal of children from their families.
+
+10:
+What reasons can lead to unfair and unethical AI and Data Science models and algorithms?
+
+Systemic bias in society

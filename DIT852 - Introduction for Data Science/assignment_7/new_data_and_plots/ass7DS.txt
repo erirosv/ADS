@@ -1,0 +1,15 @@
+32-bits are the most common use when training a neural network. 32-bits do fit the best in RAM, so the best thing is to convert it to 32-bit immediately.
+
+lbl_train stands for Label smoothing. This turns a 'hard' class of label assignemnts to a 'soft' label assignemnts. Since a 'hard' label are binary. In other words either it has a label or not. By converting it to a soft label, it becomes a score. This score can be compared with a likelyhood or probability.
+
+What’s most important to understand is that you usually need unbiased evaluation to properly use these measures, assess the predictive performance of your model, and validate the model.
+
+This means that you can’t evaluate the predictive performance of a model with the same data you used for training. You need evaluate the model with fresh data that hasn’t been seen by the model before. You can accomplish that by splitting your dataset before you use it.
+
+This function divides the training and testing. To get an unbiased evaluation of results and assess the predictive power of the machine learning model we must evaluate using new data. We reach this by splitting the dataset into training and testing. You can not validate a model by using the data it is trained on.
+
+rectified linear activation function
+
+The reason there are 10 in the output layer is that in hyperparameters num_classes = 10
+
+0.001, 0.005, 0.00,8, 0.0001, 0.0005
