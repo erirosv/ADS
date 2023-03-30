@@ -29,9 +29,13 @@
     - https://github.com/enriquea/feseR
 - soumenca/An-Efficient-Gaussian-Kernel-Based-Fuzzy-Rough-Set-Approach-for-Feature-Selection
     - https://github.com/soumenca/An-Efficient-Gaussian-Kernel-Based-Fuzzy-Rough-Set-Approach-for-Feature-Selection
+- AkalyaAsokan/Data-Mining-Novel-Feature-Selection-Algorithm [nice link]
+    - https://github.com/AkalyaAsokan/Data-Mining-Novel-Feature-Selection-Algorithm
+- Hmamouche/GFSM
+    - https://github.com/Hmamouche/GFSM
 
-
-
+## List of repos
+- https://github.com/topics/feature-selection?l=r&o=desc&s=
 
 ## Nice to have
 - https://github.com/wangxb96/Awesome-Feature-Selection
