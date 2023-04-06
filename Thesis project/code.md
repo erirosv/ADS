@@ -45,3 +45,6 @@
 ## Nice to have
 - https://github.com/wangxb96/Awesome-Feature-Selection
 
+## Need access to read
+- Feature Selection Applied to Microarray Data
+    - https://link.springer.com/protocol/10.1007/978-1-4939-9442-7_6
