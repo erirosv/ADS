@@ -17,3 +17,7 @@ The cost function for SVM is the hinge loss function, given by:
 Here, n is the number of training instances, xi is the i-th input vector, yi is the corresponding target output, and alpha is a regularization hyperparameter that controls the tradeoff between maximizing the margin and minimizing the misclassifications. The first term in the cost function is the classification loss, which penalizes misclassifications, and the second term is the regularization term, which encourages a small weight vector [42], [43].
 
 To optimize this cost function, one can use optimization algorithms such as stochastic gradient descent or quadratic programming. The optimal solution for the SVM algorithm is found when the weight vector w and the bias term b are determined such that they minimize the cost function while satisfying the constraints that ensure the hyperplane separates the two classes with the maximum margin. Therefore, SVM is a linear model for binary classification that tries to find the best possible boundary that can separate the two classes in the input data by maximizing the margin between the hyperplane and the nearest data points while minimizing misclassifications using the hinge loss function [42], [43].
+
+**PSEUDO CODE**
+
+**ALGORITHM**
