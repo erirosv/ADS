@@ -27,3 +27,5 @@ AL2
 where γk is a non-monotone gain sequence that is typically chosen to satisfy certain conditions, ||gk|| is the norm of the gradient estimate, and ||∆k|| is the norm of the perturbation vector [26].
 
 The Barzilai and Borwein algorithm has been shown to be effective for minimizing non-convex, ill-conditioned functions. The non-monotone gain sequence allows the algorithm to escape from local minima and find better solutions [26]. Note that the choice of the initial point, the search directions, and the stopping criterion are problem-dependent and may require some trial and error. The BB algorithm is usually applied to unconstrained optimization problems and may require some modifications for constrained problems. The algorithm has been shown to have fast convergence rates and good numerical stability properties in practice.
+
+**ALGORITHM**
