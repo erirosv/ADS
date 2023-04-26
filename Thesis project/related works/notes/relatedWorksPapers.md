@@ -18,3 +18,16 @@
     - V.Bolón-CanedoN.Sánchez-MaronoA.Alonso-Betanzos (171)
 - Gene selection from microarray data for cancer classification - a machine learning approach
     -  Yu WangIgor V. TetkoMark A. HallEibe FrankAxel FaciusKlaus F.X. MayerHans W. Mewes (316)
+
+
+## only papers
+- On the Feature Selection of Microarray Data for Cancer Detection based on Random Forest Classifier
+- A review of microarray datasets and applied feature selection methods
+- Wrapper–Filter Feature Selection Algorithm Using a Memetic Framework
+- Information-Theoretic Feature Selection in Microarray Data Using Variable Complementarity
+- Two hybrid wrapper-filter feature selection algorithms applied to    high-dimensional microarray experiments
+- A comparative study of different machine learning methods on microarray gene expression data
+- A hybrid feature selection method for DNA microarray data
+- Genetic algorithm based cancerous gene identification from microarray data using ensemble of filter methods
+- Distributed feature selection: An application to microarray data classification
+- Gene selection from microarray data for cancer classification - a machine learning approach
