@@ -1,5 +1,5 @@
 
-## Rlation for doctors
+## Realation for doctors
 - Kuroda, Y., & Ohashi, J. (2015). Application of microarray-based gene expression profiling in molecular diagnosis of neurological disorders. Journal of human genetics, 60(11), 601-605.
 - Baranzini, S. E., Mudge, J., van Velkinburgh, J. C., Khankhanian, P., Khrebtukova, I., Miller, N. A., ... & Pericak-Vance, M. A. (2010). Genome, epigenome and RNA sequences of monozygotic twins discordant for multiple sclerosis. Nature, 464(7293), 1351-1356.
 - Shah, S. J., Nelson, M. R., Li, Y., Kardia, S. L., Urbanek, P., Liu, J., ... & Taylor, K. D. (2015). Genetic architecture of atherosclerosis in mice: a systems genetics analysis of common inbred strains. PLoS genetics, 11(10), e1005711.
