@@ -1,5 +1,10 @@
 # Code of potential algorithms to becnhmark
 
+## SPFSR
+- akmand
+    - https://github.com/akmand/spFSR
+
+
 ## List of links
 - kivancguckiran/microarray-classification
     - https://github.com/kivancguckiran/microarray-classification
