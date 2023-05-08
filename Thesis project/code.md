@@ -4,6 +4,10 @@
 - akmand
     - https://github.com/akmand/spFSR
 
+## Classification
+- empathy87
+    - https://github.com/empathy87/The-Elements-of-Statistical-Learning-Python-Notebooks/tree/master
+
 
 ## List of links
 - kivancguckiran/microarray-classification
