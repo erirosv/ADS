@@ -32,3 +32,25 @@ Hybrid methods:
 - Random particle swarm optimization (RPSO)
 - Distributed filter (DF)
 - Distributed ranking filter (DRF)
+
+## Coutn of all methods
+Chi Squared: 1
+CFS: 4
+SVM-RFE: 1
+ReliefF: 3
+mRMR: 2
+PCA: 3
+RFE: 2
+IG: 3
+SU: 1
+MRMR: 1
+t-test: 1
+Fisher score: 1
+Gini index: 1
+RPSO + SVM: 1
+DF: 1
+DRF: 1
+GA: 3
+JMI: 1
+SFS: 1
+Random forest-based feature selection: 1
