@@ -2,7 +2,7 @@
 
 I am aware not all sections are compelte, the feedback for the none complete sections are there just to make it easier for the readerr who do not have any prior knowledge.
 
-SOme general notes:
+Some general notes:
 - Tables have no name and caption. You mention to see Table 1. I assumed it was the first table. 
 
 ## Introduction
@@ -105,5 +105,4 @@ The title page would be nice if you included it, it helps to narrrow down the sc
 
 You state the aim of the thesis with 2 points in the intrroduction. Howvever, in chapter 3. Thesis Objective, you state 3 points. Which one is the correct one?
 
-It would be nice with figures as a complement to the text to make it more understandable.
-
+It would be nice with figures as a complement to the text to make it more understandable, i.e. the models you are using, Jaccard, OD matrix.
