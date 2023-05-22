@@ -56,6 +56,29 @@ Otherwise, I do like this part, explaining with a usecase and potential stakehol
 Good description regarding the etichs. However, since you mention user collected data earlier in the interoduction, it would be nice to have it in the same place to reduce jumping arount.
 
 ## Methods
+Good short description, short and informative what to expect in the chapter.
+
+### Data sources
+I would keep it as it is, reference to the data tables would be a nice addition.
+
+### Mobile Application Data (MAD)
+The text were well written and described all the points with enough information, there are som minor thoughts:
+- In the MAD processing, you mention *"sevetal data processin steps were implemented"*, which steps?
+- Table missing Name, Caption.
+- You mention that you will not inclide weekends and holidays. Weekends are simple to exclude, but how does it work with the holiday? What id someone have a holiday in none vacation season?
+
+### Travel Survey
+When you reference the table, maybe: "summarized in the table ```\ref{table}```
+
+Table is missing caption and name
+
+### Home and work detection
+You refer to a model that you use, what is the model? can you describe it with a figure?
+
+Usually dont begin a sentence with "So", it is more "every day English"
+- Last sentence in the first paragraph: "So the estimated..."
+
+
 
 
 
