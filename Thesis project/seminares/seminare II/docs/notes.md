@@ -38,4 +38,28 @@ You begini with a connection back to the prior text. Really nice.
 The second paragraph does contain a lot of information. Maybe a small table to helt summarize the models? Maybe a bit more explonation regarding the models?
 
 #### Routine activities at home and work
+Developed by a study? Use the Authors name to give more clarity who the autor are.
+
+### Synthesizing activity plans from incomplete data
+CDR? You introduce a new acronyme without any exploation
+- Google search: Call Detail Record?
+
+## Research gaps
+A new general technique, but what model? Describe the model, a gigure would be nice as well
+
+## Thesis objectives
+You mentioned two points in the introduction, here is it three points? need to stay consistent.
+
+Otherwise, I do like this part, explaining with a usecase and potential stakeholders.
+
+### Ethical considerations
+Good description regarding the etichs. However, since you mention user collected data earlier in the interoduction, it would be nice to have it in the same place to reduce jumping arount.
+
+## Methods
+
+
+
+
+
+
 
