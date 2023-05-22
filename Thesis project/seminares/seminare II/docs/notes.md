@@ -75,7 +75,11 @@ Table is missing caption and name
 ### Home and work detection
 You refer to a model that you use, what is the model? can you describe it with a figure?
 
-Usually dont begin a sentence with "So", it is more "every day English"
+Maybe rephrase the first paragraph:
+
+> We employ the model proposed in to estimate our MAD-users' home and work locations. The paper focuses on determining home locations, and we utilize the most frequented area throughout the night for each individual as the projected home location, and we estimate using the same time frame. To estimate work location, we first eliminate each user's predicted home location. Because we are interested in travel patterns, having both home and work in the same region might confound our results. Then we look at the opposite hours that we looked at when we looked at the user's home location, minus some time for the user to commute. As a result, the estimated work location is the location that was visited the most from 09-17 and is not the home location.
+
+- Usually dont begin a sentence with "So", it is more "every day English"
 - Last sentence in the first paragraph: "So the estimated..."
 - X imes and X minutes. This means that they are the same, are they always the same? If not, change to X and Y or some other variable name.
 - The paragraph under the placeholder for the picture, does not really connect to tyhe third paragraph.
