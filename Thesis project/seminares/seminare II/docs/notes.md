@@ -77,6 +77,24 @@ You refer to a model that you use, what is the model? can you describe it with a
 
 Usually dont begin a sentence with "So", it is more "every day English"
 - Last sentence in the first paragraph: "So the estimated..."
+- X imes and X minutes. This means that they are the same, are they always the same? If not, change to X and Y or some other variable name.
+- The paragraph under the placeholder for the picture, does not really connect to tyhe third paragraph.
+
+### Matching home location with DeSO-code
+Describe waht DeSo-code and DeSO-area, for a reader with no prior knowledge, there is a bit of confusion. It was hard to understand the subchapter.
+
+### Polpulation debiasing based on estimated home location
+I did not read this part...
+
+### Transforming the data for Jaccard similarity comparison
+You describe how the data is used, workflow, and example. However, I have no idea what the Jaccard is. Jaccard needds to be described what it is and how it works.
+
+Overall, it is very good written, you cover the solution part. However, to fully grasp the solution part, some descriptions regarding the Jaccard is needed.
+
+### Running the Jaccard similarity comparison with added probability information
+Good flow in the text and explain waht you are doing. Still missing some theoretical parts.
+
+This sentence was not complete: *"The comparison only looks at MAD-users and survey participants living in the same county, since"* ?
 
 
 
