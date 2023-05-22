@@ -96,11 +96,14 @@ Good flow in the text and explain waht you are doing. Still missing some theoret
 
 This sentence was not complete: *"The comparison only looks at MAD-users and survey participants living in the same county, since"* ?
 
+## Summary
+Overall is the text good, and have a flow. There are some minor parts that are more "every data" English. 
 
+The text needs some more explanations regarding the theoretical part. I had to google "Jaccard" and "OD matrix" do understand how it worked (or it could be me who missed something?).
 
+The title page would be nice if you included it, it helps to narrrow down the scope and get an idea of what you are writing about. The same also goes for the reference list. It would be nice to be able to see the sources, i.e. in chapter 4.2 you mention that you are using the model from the source ```\cite{pappalardo2021evaluation}```, it is har do understand how the model is working with no way of looking it up.
 
+You state the aim of the thesis with 2 points in the intrroduction. Howvever, in chapter 3. Thesis Objective, you state 3 points. Which one is the correct one?
 
-
-
-
+It would be nice with figures as a complement to the text to make it more understandable.
 
